@@ -73,8 +73,4 @@ function start() {
   console.log('########## GAME OVER ##########');
 }
 
-module.exports = {
-  start,
-  play,
-  getOutputDataFormat,
-};
+module.exports = { start };

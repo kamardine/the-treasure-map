@@ -16,7 +16,7 @@ function setAdventurer(adventurerData) {
   const [label, name, xAxis, yAxis, firstOrientation, movementsToBeMade] = adventurerData;
   const id = state.adventurers.length + 1;
   state.adventurers.push({
-    id: id,
+    id,
     label,
     name: name.toLowerCase(),
     xAxis: Number(xAxis),
@@ -42,7 +42,7 @@ function setMaxGameRounds() {
   state.maxGameRounds = state.adventurers[0].movementsToBeMade.length;
 }
 
-function setcurrentPlayer() {
+function setCurrentPlayer() {
   state.currentPlayer = state.adventurers[0].id;
 }
 
@@ -56,7 +56,7 @@ function setGameHistory() {
 
 function setGameParams() {
   setMaxGameRounds();
-  setcurrentPlayer();
+  setCurrentPlayer();
   setGameHistory();
 }
 
@@ -145,4 +145,4 @@ module.exports = {
   addMountainsToMap,
   addTreasuresToMap,
   addAdventurersToMap,
- };
+};

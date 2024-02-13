@@ -203,7 +203,7 @@ function movePlayer(player) {
     updatePlayerParams(playerIndex, newOrientation, oldPosition);
   }
 
-  addPlayerInGameHistory(playerIndex)
+  addPlayerInGameHistory(playerIndex);
   changeCurrentPlayer(playerIndex);
 }
 
