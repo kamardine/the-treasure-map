@@ -65,7 +65,7 @@ function start() {
 
   if (!data) return;
 
-  const gameData = data.split('\n').map((item) => item.split(' ').join(''));
+  const gameData = data.split('\n').map((item) => item.replaceAll(' ', ''));
   init(gameData);
   play();
   writeResultInOutputData();
